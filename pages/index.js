@@ -39,6 +39,7 @@ export default function Home() {
                 height={800}
                 layout="responsive"
                 className="card-image"
+                
               />
             </Card>
           </Col>

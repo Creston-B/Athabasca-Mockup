@@ -14,22 +14,21 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <Container className={styles["main-container"]}>
-        <Row className="title-row">
+        <Row className="title-row mt-4 mb-2">
           <Col>
             <h1 className="mainhead">Kikapekiskwewin</h1>
             <h4 className="subhead">
               Why are cultural values so important to Indigenous people involved
-              in research with Indigenous people? aaaaaaaaaaaaaaaa aaaaa
-              aaaaaaaaaaaaaaaa aaaaaa Why are cultural values so important to
-              Indigenous people involved in research with Indigenous people?
-              aaaaaaaaaaaaaaaa aaaaa aaaaaaaaaaaaaaaa aaaaaa
+              in research with Indigenous people?
             </h4>
           </Col>
         </Row>
-        <Row>
+        <Row className="mb-5">
           <Col>A project description.</Col>
         </Row>
-        <Row>
+        <h4>The Team</h4>
+        <Row xs={1} md={3} className="mb-5">
+         
           <Col>
             <Card>
               <Image
@@ -39,12 +38,44 @@ export default function Home() {
                 height={800}
                 layout="responsive"
                 className="card-image"
-                
+
               />
+              <Card.Body>
+                <Card.Title>Person 1</Card.Title>
+                <Card.Text>A quick description of the person in question</Card.Text>
+              </Card.Body>
             </Card>
           </Col>
-          <Col>Image 2</Col>
-          <Col>Image 3</Col>
+          <Col><Card>
+              <Image
+                src="/sample-user.png"
+                alt="sample user image"
+                width={800}
+                height={800}
+                layout="responsive"
+                className="card-image"
+
+              />
+              <Card.Body>
+                <Card.Title>Person 2</Card.Title>
+                <Card.Text>A quick description of the person in question</Card.Text>
+              </Card.Body>
+            </Card></Col>
+          <Col><Card>
+              <Image
+                src="/sample-user.png"
+                alt="sample user image"
+                width={800}
+                height={800}
+                layout="responsive"
+                className="card-image"
+
+              />
+              <Card.Body>
+                <Card.Title>Person 3</Card.Title>
+                <Card.Text>A quick description of the person in question</Card.Text>
+              </Card.Body>
+            </Card></Col>
         </Row>
       </Container>
     </Layout>

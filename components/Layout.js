@@ -8,7 +8,7 @@ export default class Layout extends Component {
   render () {
     const { children } = this.props
     return (
-      <div className='container'>
+      <div className={'min-vh-100', styles['layout']}>
         <Header />
         {children}
         <Footer />

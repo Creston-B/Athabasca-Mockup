@@ -26,31 +26,33 @@ export default function Home({ profiledata }) {
         </Row>
         <Row className="mb-5">
           <Col>
-            This two-day, in-person and online event and outreach activities
-            explores the central theme of "parallel pathways" to research ethics
-            by 1) centering and exploring how Indigenous people want to advance
-            self-determination through Indigenous research ethics; and 2)
-            considering how REB representatives and financial administrators can
-            be responsive and accountable to assertions of Indigenous
-            self-determination. By bringing together Indigenous researchers,
-            Indigenous people involved in research, members of research ethics
-            boards, scholars from the international community, and national
-            leaders of Indigenous organizations, we will discuss the
-            possibilities of advancing parallel pathways to research ethics
-            using Indigenous values that inform Indigenous legal traditions
-            (Borrows, 2019).
-            <br />
-            <br />
-            To open possibilities for 'imagining otherwise', these discussions
-            will be grounded in an understanding of how some international
-            post-secondary organizations operationalize research ethics. The
-            forum will begin with Auger, Greene, Nath, and Tait presenting the
-            paper, "Wisdom Seeking Together": Circling around Research Ethics.
-            We will follow cultural protocols and invite three co-creators of
-            Auger's research who chose not to remain anonymous to this event.
-            The proposal aims to bring together international experts to consult
-            on the perspective articulated in the research literature for the
-            purpose of assessing what consensus there.
+            <p>
+              This two-day, in-person and online event and outreach activities
+              explores the central theme of &quot;parallel pathways&quot; to research
+              ethics by 1) centering and exploring how Indigenous people want to
+              advance self-determination through Indigenous research ethics; and
+              2) considering how REB representatives and financial
+              administrators can be responsive and accountable to assertions of
+              Indigenous self-determination. By bringing together Indigenous
+              researchers, Indigenous people involved in research, members of
+              research ethics boards, scholars from the international community,
+              and national leaders of Indigenous organizations, we will discuss
+              the possibilities of advancing parallel pathways to research
+              ethics using Indigenous values that inform Indigenous legal
+              traditions (Borrows, 2019).
+            </p>
+            <p>
+              To open possibilities for &apos;imagining otherwise&apos;, these discussions
+              will be grounded in an understanding of how some international
+              post-secondary organizations operationalize research ethics. The
+              forum will begin with Auger, Greene, Nath, and Tait presenting the
+              paper, &quot;Wisdom Seeking Together&quot;: Circling around Research Ethics.
+              We will follow cultural protocols and invite three co-creators of
+              Auger&apos;s research who chose not to remain anonymous to this event.
+              The proposal aims to bring together international experts to
+              consult on the perspective articulated in the research literature
+              for the purpose of assessing what consensus there.
+            </p>
           </Col>
         </Row>
         <Row id="Team" className="mt-4 mb-4">

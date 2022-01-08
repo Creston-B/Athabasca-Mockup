@@ -1,5 +1,6 @@
 import '../styles/globals.css'
 import '../styles/App.scss';
+import 'react-multi-carousel/lib/styles.css'
 
 function MyApp({ Component, pageProps }) {
   return <Component {...pageProps} />

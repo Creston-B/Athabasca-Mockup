@@ -42,7 +42,7 @@ export default class UserCarousel extends Component {
         ssr={true}
         infinite={true}
         autoPlay={true}
-        autoPlaySpeed={3000}
+        autoPlaySpeed={3500}
       >
         {profiles.map(user => (
           <UserCard key={user.name} name={user.name} description={user.description} image={user.image || profiledata.defaultImage}></UserCard>
@@ -56,7 +56,7 @@ class UserCard extends Component {
   render() {
     const { name, description, image } = this.props;
     return (
-      <Card>
+      <Card className="h-100">
           <Image
             src={image}
             alt={name}

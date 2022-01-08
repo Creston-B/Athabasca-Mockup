@@ -32,7 +32,7 @@ class NavComponent extends Component {
                 />
               </Navbar.Brand>
             </Col>
-            <Col className="justify-self-end flex-grow-0 justify-content-end">
+            <Col className="mt-4 mr-2 justify-self-end flex-grow-0 justify-content-end">
             <Navbar.Toggle
                 className="navbar-toggle"
                 aria-controls="responsive-navbar-nav"
@@ -51,6 +51,11 @@ class NavComponent extends Component {
                 <Nav className="me-auto">
                   <Nav.Link className="nav-button text-end" href="#Schedule">
                     <strong>Schedule</strong>
+                  </Nav.Link>
+                </Nav>
+                <Nav className="me-auto">
+                  <Nav.Link className="nav-button text-end" href="#Present">
+                    <strong>Present</strong>
                   </Nav.Link>
                 </Nav>
               </Navbar.Collapse>

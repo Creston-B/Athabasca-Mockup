@@ -38,7 +38,7 @@ $banner-text-color: #fff;
 
 .navbar,
 .navbar-dark {
-  background-color: $banner-color;
+  @extend .banner;
 }
 
 @media (max-width: 600px) {

@@ -6,7 +6,6 @@ import { Card } from "react-bootstrap";
 
 export default class UserCarousel extends Component {
   render() {
-
     const responsive = {
       superLargeDesktop: {
         // the naming can be any, depends on you.
@@ -28,15 +27,17 @@ export default class UserCarousel extends Component {
     };
 
     const { profiledata, role } = this.props;
-    const profiles = profiledata.profiles.filter(user => user.role == role);
+    const profiles = profiledata.profiles.filter((user) => user.role == role);
 
-    if (Object.keys(profiles).length == 0){
-      return(
-        <div className="mt-4 mb-4"><h2>To be announced!</h2></div>
-      )
+    if (Object.keys(profiles).length == 0) {
+      return (
+        <div className="mt-4 mb-4">
+          <h2>To be announced!</h2>
+        </div>
+      );
     }
 
-    return(
+    return (
       <Carousel
         responsive={responsive}
         ssr={true}
@@ -44,32 +45,51 @@ export default class UserCarousel extends Component {
         autoPlay={true}
         autoPlaySpeed={3500}
       >
-        {profiles.map(user => (
-          <UserCard key={user.name} name={user.name} description={user.description} image={user.image || profiledata.defaultImage}></UserCard>
+        {profiles.map((user) => (
+          <UserCard
+            key={user.name}
+            name={user.name}
+            description={user.description}
+            image={user.image || profiledata.defaultImage}
+            linkedin={user.linkedin}
+          ></UserCard>
         ))}
       </Carousel>
-    )
-    }
+    );
+  }
 }
 
 class UserCard extends Component {
   render() {
-    const { name, description, image } = this.props;
+    const { name, description, image, linkedin } = this.props;
     return (
-      <Card className="h-100">
-          <Image
-            src={image}
-            alt={name}
-            width={800}
-            height={800}
-            layout="responsive"
-            className="card-image"
-          />
-          <Card.Body>
-            <Card.Title>{name}</Card.Title>
-            <Card.Text>{description}</Card.Text>
-          </Card.Body>
-        </Card>
+      <Card className="h-100 m-1">
+        <Image
+          src={image}
+          alt={name}
+          width={800}
+          height={800}
+          layout="responsive"
+          className="card-image"
+        />
+        <Card.Body>
+          <Card.Title>{name}</Card.Title>
+          <Card.Text>{description}</Card.Text>
+          {linkedin ? (
+            <Card.Link
+              href={linkedin}
+              className="text-decoration-none text-reset"
+            >
+              <div className="align-middle">
+              <Image src="/In-Blue-Logo.png" width={21} height={21}/>
+              <span className="align-top"> LinkedIn</span>
+              </div>
+            </Card.Link>
+          ) : (
+            []
+          )}
+        </Card.Body>
+      </Card>
     );
   }
 }

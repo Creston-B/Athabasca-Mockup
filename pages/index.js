@@ -66,6 +66,10 @@ export default function Home({ profiledata }) {
             role="presenter"
           ></UserCarousel>
         </Row>
+        <Row className="mt-4 mb-4">
+          <h4>Schedule</h4>
+          <p>TBA - TODO</p>
+        </Row>
         <Row id="Present" className="mt-4 mb-4 mw-lg m-auto">
           <Col className="p-2 ">
             <h4>Submit a presentation</h4>
